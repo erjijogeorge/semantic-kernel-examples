@@ -177,6 +177,40 @@ python examples/step6_streaming.py
 - **Non-Streaming**: Wait → Get complete response → Display
 - **Streaming**: Get tokens → Display immediately → Continue
 
+### Step 7: Memory & RAG (Retrieval Augmented Generation)
+
+Give AI long-term memory and the ability to search documents.
+
+```bash
+python examples/step7_memory_rag.py
+```
+
+**Concepts:**
+- Vector databases for semantic search
+- Storing and retrieving memories
+- Document chunking and ingestion
+- RAG pattern: Retrieve → Augment → Generate
+- Semantic search (find by meaning, not keywords)
+- Building Q&A systems over documents
+
+**Examples Included:**
+- **Basic Memory**: Store and retrieve user facts
+- **Document Q&A**: RAG-based question answering
+- **Conversational Memory**: AI remembers past conversations
+- **Semantic Search**: Find similar content by meaning
+
+**What You'll Learn:**
+- How to use vector databases (ChromaDB)
+- How to implement the RAG pattern
+- How to build document Q&A systems
+- How semantic search works
+- How to give AI long-term memory
+
+**RAG Pattern:**
+1. **RETRIEVE**: Search vector DB for relevant documents
+2. **AUGMENT**: Add retrieved context to the prompt
+3. **GENERATE**: AI answers using the context
+
 ## Project Structure
 
 ```
@@ -188,6 +222,7 @@ semantic-kernel-app/
 │   ├── step4_native_functions.py
 │   ├── step5_semantic_functions.py
 │   ├── step6_streaming.py
+│   ├── step7_memory_rag.py
 │   ├── plugins/                          # Native function plugins
 │   │   ├── __init__.py
 │   │   ├── math_plugin.py
@@ -224,9 +259,9 @@ semantic-kernel-app/
 
 ## Next Steps
 
-- Step 7: Memory & RAG (Retrieval Augmented Generation)
 - Step 8: Planners & Autonomous Agents
 - Step 9: Interactive Chat Application with All Features
+- Advanced: Multi-Agent Systems, Custom Connectors, Production Deployment
 
 ## Resources
 
