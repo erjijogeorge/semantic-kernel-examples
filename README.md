@@ -144,6 +144,39 @@ python examples/step5_semantic_functions.py
 - **Native Functions (Step 4)**: Python code that AI calls
 - **Semantic Functions (Step 5)**: AI prompts that become reusable functions
 
+### Step 6: Streaming Responses
+
+Get real-time, token-by-token responses from the AI.
+
+```bash
+python examples/step6_streaming.py
+```
+
+**Concepts:**
+- Streaming vs non-streaming responses
+- Real-time token-by-token output
+- Streaming with chat history
+- Streaming with function calling
+- Better user experience with immediate feedback
+
+**Examples Included:**
+- **Basic Streaming**: Simple streaming response
+- **Comparison**: Streaming vs non-streaming side-by-side
+- **Chat History**: Multi-turn conversations with streaming
+- **Function Calling**: Streaming with auto function calling
+- **Interactive Chat**: Simulated interactive chat application
+
+**What You'll Learn:**
+- How to stream responses in real-time
+- When to use streaming vs non-streaming
+- How to combine streaming with chat history
+- How to stream with function calling enabled
+- Building responsive chat applications
+
+**Key Difference:**
+- **Non-Streaming**: Wait → Get complete response → Display
+- **Streaming**: Get tokens → Display immediately → Continue
+
 ## Project Structure
 
 ```
@@ -154,6 +187,7 @@ semantic-kernel-app/
 │   ├── step3_chat_history.py
 │   ├── step4_native_functions.py
 │   ├── step5_semantic_functions.py
+│   ├── step6_streaming.py
 │   ├── plugins/                          # Native function plugins
 │   │   ├── __init__.py
 │   │   ├── math_plugin.py
@@ -190,10 +224,9 @@ semantic-kernel-app/
 
 ## Next Steps
 
-- Step 6: Streaming Responses
 - Step 7: Memory & RAG (Retrieval Augmented Generation)
 - Step 8: Planners & Autonomous Agents
-- Step 9: Interactive Chat Application
+- Step 9: Interactive Chat Application with All Features
 
 ## Resources
 
