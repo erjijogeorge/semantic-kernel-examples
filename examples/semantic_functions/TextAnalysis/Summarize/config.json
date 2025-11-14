@@ -1,0 +1,23 @@
+{
+  "schema": 1,
+  "description": "Summarizes text to a specified length",
+  "execution_settings": {
+    "default": {
+      "max_tokens": 500,
+      "temperature": 0.3,
+      "top_p": 0.9
+    }
+  },
+  "input_variables": [
+    {
+      "name": "input",
+      "description": "The text to summarize",
+      "required": true
+    },
+    {
+      "name": "max_words",
+      "description": "Maximum number of words in summary",
+      "default": "50"
+    }
+  ]
+}

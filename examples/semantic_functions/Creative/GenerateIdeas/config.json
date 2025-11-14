@@ -1,0 +1,23 @@
+{
+  "schema": 1,
+  "description": "Generates creative ideas for a given topic or problem",
+  "execution_settings": {
+    "default": {
+      "max_tokens": 600,
+      "temperature": 0.8,
+      "top_p": 0.95
+    }
+  },
+  "input_variables": [
+    {
+      "name": "input",
+      "description": "The topic or problem to generate ideas for",
+      "required": true
+    },
+    {
+      "name": "count",
+      "description": "Number of ideas to generate",
+      "default": "5"
+    }
+  ]
+}

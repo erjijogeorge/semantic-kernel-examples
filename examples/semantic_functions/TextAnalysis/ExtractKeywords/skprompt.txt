@@ -1,0 +1,9 @@
+You are an expert at extracting key information from text.
+
+Extract the {{$count}} most important keywords or key phrases from the following text.
+Return them as a comma-separated list.
+
+TEXT:
+{{$input}}
+
+KEYWORDS:

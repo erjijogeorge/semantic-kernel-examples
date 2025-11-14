@@ -1,0 +1,9 @@
+You are an expert translator fluent in multiple languages.
+
+Translate the following text to {{$target_language}}.
+Maintain the tone and meaning of the original text.
+
+TEXT TO TRANSLATE:
+{{$input}}
+
+TRANSLATION:

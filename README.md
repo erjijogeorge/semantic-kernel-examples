@@ -113,6 +113,37 @@ python examples/step4_native_functions.py
 - How to chain multiple function calls together
 - Real-world patterns: API calls, database queries, calculations
 
+### Step 5: Semantic Functions
+
+Create AI-powered functions defined by prompts (not code).
+
+```bash
+python examples/step5_semantic_functions.py
+```
+
+**Concepts:**
+- Creating semantic functions from prompt templates
+- Organizing functions with `config.json` and `skprompt.txt`
+- Reusable AI capabilities
+- Chaining semantic functions together
+- Difference between native and semantic functions
+
+**Semantic Functions Included:**
+- **TextAnalysis**: Summarize, SentimentAnalysis, ExtractKeywords
+- **Translation**: Translate to any language
+- **Creative**: WritePoem, GenerateIdeas
+
+**What You'll Learn:**
+- How to create AI functions using prompts instead of code
+- How to organize semantic functions in folders
+- How to configure function parameters and settings
+- How to chain multiple semantic functions into pipelines
+- When to use semantic vs native functions
+
+**Key Difference:**
+- **Native Functions (Step 4)**: Python code that AI calls
+- **Semantic Functions (Step 5)**: AI prompts that become reusable functions
+
 ## Project Structure
 
 ```
@@ -122,11 +153,34 @@ semantic-kernel-app/
 │   ├── step2_prompt_templates.py
 │   ├── step3_chat_history.py
 │   ├── step4_native_functions.py
-│   └── plugins/
-│       ├── __init__.py
-│       ├── math_plugin.py
-│       ├── weather_plugin.py
-│       └── database_plugin.py
+│   ├── step5_semantic_functions.py
+│   ├── plugins/                          # Native function plugins
+│   │   ├── __init__.py
+│   │   ├── math_plugin.py
+│   │   ├── weather_plugin.py
+│   │   └── database_plugin.py
+│   └── semantic_functions/               # Semantic function definitions
+│       ├── TextAnalysis/
+│       │   ├── Summarize/
+│       │   │   ├── config.json
+│       │   │   └── skprompt.txt
+│       │   ├── SentimentAnalysis/
+│       │   │   ├── config.json
+│       │   │   └── skprompt.txt
+│       │   └── ExtractKeywords/
+│       │       ├── config.json
+│       │       └── skprompt.txt
+│       ├── Translation/
+│       │   └── Translate/
+│       │       ├── config.json
+│       │       └── skprompt.txt
+│       └── Creative/
+│           ├── WritePoem/
+│           │   ├── config.json
+│           │   └── skprompt.txt
+│           └── GenerateIdeas/
+│               ├── config.json
+│               └── skprompt.txt
 ├── .env.example
 ├── .gitignore
 ├── pyproject.toml
@@ -136,10 +190,10 @@ semantic-kernel-app/
 
 ## Next Steps
 
-- Step 5: Function Calling & Auto-Invocation
 - Step 6: Streaming Responses
-- Step 7: Memory & RAG
-- Step 8: Planners & Agents
+- Step 7: Memory & RAG (Retrieval Augmented Generation)
+- Step 8: Planners & Autonomous Agents
+- Step 9: Interactive Chat Application
 
 ## Resources
 

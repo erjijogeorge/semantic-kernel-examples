@@ -1,0 +1,28 @@
+{
+  "schema": 1,
+  "description": "Writes a creative poem on a given topic",
+  "execution_settings": {
+    "default": {
+      "max_tokens": 400,
+      "temperature": 0.9,
+      "top_p": 0.95
+    }
+  },
+  "input_variables": [
+    {
+      "name": "input",
+      "description": "The topic or subject of the poem",
+      "required": true
+    },
+    {
+      "name": "style",
+      "description": "The style of poem (e.g., haiku, sonnet, free verse)",
+      "default": "free verse"
+    },
+    {
+      "name": "length",
+      "description": "Number of lines in the poem",
+      "default": "8"
+    }
+  ]
+}

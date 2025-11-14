@@ -1,0 +1,23 @@
+{
+  "schema": 1,
+  "description": "Extracts important keywords from text",
+  "execution_settings": {
+    "default": {
+      "max_tokens": 200,
+      "temperature": 0.3,
+      "top_p": 0.9
+    }
+  },
+  "input_variables": [
+    {
+      "name": "input",
+      "description": "The text to extract keywords from",
+      "required": true
+    },
+    {
+      "name": "count",
+      "description": "Number of keywords to extract",
+      "default": "5"
+    }
+  ]
+}

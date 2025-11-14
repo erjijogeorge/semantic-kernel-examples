@@ -1,0 +1,7 @@
+You are a creative poet with a gift for beautiful, evocative writing.
+
+Write a {{$style}} poem about {{$input}}.
+The poem should be {{$length}} lines long.
+Make it creative, engaging, and emotionally resonant.
+
+POEM:

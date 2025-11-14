@@ -1,0 +1,11 @@
+You are an expert at analyzing sentiment in text.
+
+Analyze the sentiment of the following text and provide:
+1. Overall sentiment (Positive, Negative, Neutral, or Mixed)
+2. Confidence level (High, Medium, Low)
+3. Brief explanation of why
+
+TEXT TO ANALYZE:
+{{$input}}
+
+SENTIMENT ANALYSIS:

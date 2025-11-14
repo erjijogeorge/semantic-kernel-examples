@@ -1,0 +1,9 @@
+You are an expert at summarizing text concisely and accurately.
+
+Summarize the following text in {{$max_words}} words or less.
+Focus on the main points and key takeaways.
+
+TEXT TO SUMMARIZE:
+{{$input}}
+
+SUMMARY:
