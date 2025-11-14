@@ -211,6 +211,43 @@ python examples/step7_memory_rag.py
 2. **AUGMENT**: Add retrieved context to the prompt
 3. **GENERATE**: AI answers using the context
 
+### Step 8: Planners & Autonomous Agents
+
+Build AI agents that can plan and execute multi-step tasks autonomously.
+
+```bash
+python examples/step8_planners_agents.py
+```
+
+**Concepts:**
+- Autonomous agents that break down complex tasks
+- Multi-step planning and execution
+- Function calling with reasoning
+- Agent-driven workflows
+- Task decomposition and orchestration
+- Adaptive behavior based on results
+
+**Examples Included:**
+- **Simple Autonomous Task**: AI plans and executes calculations
+- **Multi-Step Research**: Agent gathers data from multiple sources
+- **Conversational Agent**: Maintains context and plans across turns
+- **Goal-Oriented Agent**: Works systematically towards objectives
+- **Adaptive Agent**: Adjusts strategy based on discovered information
+
+**What You'll Learn:**
+- How to build autonomous AI agents
+- How agents plan multi-step workflows
+- How to enable autonomous function calling
+- How agents maintain context and adapt
+- When to use autonomous agents vs manual orchestration
+
+**Agent Capabilities:**
+- **Task Decomposition**: Breaking complex goals into steps
+- **Multi-Step Reasoning**: Planning sequences of actions
+- **Tool Selection**: Choosing the right functions autonomously
+- **Adaptive Behavior**: Adjusting based on results
+- **Conversational Memory**: Maintaining context across turns
+
 ## Project Structure
 
 ```
@@ -223,6 +260,7 @@ semantic-kernel-app/
 │   ├── step5_semantic_functions.py
 │   ├── step6_streaming.py
 │   ├── step7_memory_rag.py
+│   ├── step8_planners_agents.py
 │   ├── plugins/                          # Native function plugins
 │   │   ├── __init__.py
 │   │   ├── math_plugin.py
@@ -259,9 +297,9 @@ semantic-kernel-app/
 
 ## Next Steps
 
-- Step 8: Planners & Autonomous Agents
 - Step 9: Interactive Chat Application with All Features
 - Advanced: Multi-Agent Systems, Custom Connectors, Production Deployment
+- Real-World Applications: Document Q&A, Customer Support, Research Assistants
 
 ## Resources
 
