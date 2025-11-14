@@ -86,6 +86,33 @@ python examples/step3_chat_history.py
 - System/user/assistant messages
 - Context awareness across messages
 
+### Step 4: Native Functions (Plugins)
+
+Create custom Python functions that AI can call automatically.
+
+```bash
+python examples/step4_native_functions.py
+```
+
+**Concepts:**
+- Creating native functions with `@kernel_function` decorator
+- Building plugins with multiple related functions
+- Type annotations for better AI understanding
+- Function descriptions to guide AI
+- Auto function calling with `FunctionChoiceBehavior`
+- Combining AI reasoning with traditional code
+
+**Plugins Included:**
+- **MathPlugin**: Mathematical operations (add, multiply, power, percentage, etc.)
+- **WeatherPlugin**: Simulated weather API calls
+- **DatabasePlugin**: Simulated database queries (users, products, orders)
+
+**What You'll Learn:**
+- How to make your Python functions callable by AI
+- How AI automatically chooses which functions to call
+- How to chain multiple function calls together
+- Real-world patterns: API calls, database queries, calculations
+
 ## Project Structure
 
 ```
@@ -93,7 +120,13 @@ semantic-kernel-app/
 ├── examples/
 │   ├── step1_basic_chat.py
 │   ├── step2_prompt_templates.py
-│   └── step3_chat_history.py
+│   ├── step3_chat_history.py
+│   ├── step4_native_functions.py
+│   └── plugins/
+│       ├── __init__.py
+│       ├── math_plugin.py
+│       ├── weather_plugin.py
+│       └── database_plugin.py
 ├── .env.example
 ├── .gitignore
 ├── pyproject.toml
@@ -103,10 +136,10 @@ semantic-kernel-app/
 
 ## Next Steps
 
-- Step 4: Native Functions (Plugins)
-- Step 5: Semantic Functions
-- Step 6: Memory & RAG
-- Step 7: Planners & Agents
+- Step 5: Function Calling & Auto-Invocation
+- Step 6: Streaming Responses
+- Step 7: Memory & RAG
+- Step 8: Planners & Agents
 
 ## Resources
 
